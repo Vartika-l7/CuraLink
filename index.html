@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuraLink AI - Intelligent Biotech Recommender</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Using Space Grotesk for that premium biotech feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Atmospheric Background Elements -->
+    <div class="bg-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Minimal Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="/static/y.png" alt="CuraLink AI" onerror="this.style.display='none'">
+            <span>CuraLink AI</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Research</a>
+            <a href="#">Platform</a>
+            <a href="#">Data</a>
+        </div>
+        <a href="#" class="nav-btn">Get Access</a>
+    </nav>
+
+    <div class="hero-container">
+        <!-- Hero Content -->
+        <header class="hero-content" id="heroContent">
+            <div class="badge">
+                <span class="pulse"></span>
+                v2.0 Model Active
+            </div>
+            <h1 class="hero-title">
+                AI-Powered<br>
+                <span class="gradient-text">Intelligent Medicine</span><br>
+                Recommendation
+            </h1>
+            <p class="hero-subtitle">
+                Advanced neural network matching generic variants and brand alternatives in real-time. Powered by cosine similarity and deep NLP.
+            </p>
+
+            <div class="search-wrapper">
+                <div class="search-glass">
+                    <i class="fa-solid fa-microscope search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Initialize scan: Enter compound or brand..." list="medicineList" autocomplete="off">
+                    <datalist id="medicineList"></datalist>
+                    <button id="searchBtn" class="premium-btn">
+                        <span>Analyze</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Loading State -->
+        <div id="aiProcessing" class="hidden processing-state">
+            <div class="scanner-container">
+                <div class="scanner-line"></div>
+            </div>
+            <p class="processing-text">Running neural analysis...</p>
+        </div>
+
+
+
+        <!-- Results View -->
+        <section id="resultsSection" class="hidden results-view">
+            <!-- Selected Medicine Analysis -->
+            <div class="glass-card analysis-card">
+                <div class="card-glow"></div>
+                <div class="analysis-header">
+                    <i class="fa-solid fa-check-double success-icon"></i>
+                    <span>Target Acquired</span>
+                </div>
+                <h2 id="featuredName">Medicine Name</h2>
+                <div class="data-tags">
+                    <span class="data-tag">Verified Compound</span>
+                    <span class="data-tag">High Similarity</span>
+                </div>
+            </div>
+
+            <!-- Recommendations Grid -->
+            <div class="recommendations-container">
+                <h3 class="results-title">Identified Structural Alternatives</h3>
+                <div class="recs-grid" id="recommendationsGrid">
+                    <!-- Cards injected via JS -->
+                </div>
+            </div>
+            
+            <div class="reset-wrapper">
+                <button id="resetBtn" class="ghost-btn"><i class="fa-solid fa-rotate-left"></i> Run New Scan</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
