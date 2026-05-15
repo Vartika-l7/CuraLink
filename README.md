@@ -2,7 +2,8 @@
 
 **CuraLink AI** is an intelligent, AI-powered medicine recommendation system designed with a premium, futuristic biotech aesthetic. It leverages Natural Language Processing (NLP) and Machine Learning (cosine similarity) to help users find generic versions or alternative brand variants for specific drugs in milliseconds.
 
-![CuraLink AI UI Preview](static/y.png)
+<img width="1920" height="1080" alt="Screenshot 2026-05-16 022035" src="https://github.com/user-attachments/assets/ca8ddbfe-09c4-441b-ad8f-1272ebf0e667" />
+
 
 ## 🌟 Key Features
 
