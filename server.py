@@ -7,7 +7,7 @@ import os
 
 app = Flask(__name__)
 
-# Base directory for absolute paths
+# Base directory for the absolute paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Load data on startup
