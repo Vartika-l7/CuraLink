@@ -1,4 +1,4 @@
-# CuraLink AI 💊
+# CuraLink AI 💊 
 
 **CuraLink AI** is an intelligent, AI-powered medicine recommendation system designed with a premium, futuristic biotech aesthetic. It leverages Natural Language Processing (NLP) and Machine Learning (cosine similarity) to help users find generic versions or alternative brand variants for specific drugs in milliseconds.
 
@@ -78,7 +78,7 @@ CuraLink/medicos-main/
     └── y.png              # CuraLink AI Logo
 ```
 
-## 🧠 How the ML Works (Under the Hood)
+## 🧠 How the Machine Learning works (Under the Hood)
 1. **Data Cleaning**: Drops nulls, removes duplicates, and splits the `Description` & `Reason` fields.
 2. **Preprocessing**: Uses NLTK’s Porter Stemmer to normalize textual data.
 3. **Vectorization**: Converts the unified tags into vectors using `CountVectorizer` (max_features=5000).
